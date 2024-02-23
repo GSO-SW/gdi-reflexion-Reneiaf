@@ -2,40 +2,31 @@ Rectangel spieler;
 
 private void FrmFrogger_KeyDown(object sender, KeyEventArgs e)
 {
-    // Spieler darf nicht nach oben aus dem Spielfeld laufen
+Ich kann dem Objekt eine Taste zuweisen die dafür zuständig ist das sie nach oben läuft 
     if (e.KeyCode == Keys.Up)
     {
-        if (spieler.Y - hoeheJeBereich >= 0) // Überprüfen, ob die Bewegung nach oben innerhalb des Spielfelds bleibt
-        {
-            spieler.Y -= hoeheJeBereich;
-        }
+        spieler.Y -= hoeheJeBereich;
     }
 
-    // Spieler darf nicht nach unten aus dem Spielfeld laufen
+Ich kann dem Objekt eine Taste zuweisen die dafür zuständig ist das sie nach unten läuft 
+
     if (e.KeyCode == Keys.Down)
     {
-        if (spieler.Y + spieler.Height + hoeheJeBereich <= hoehe) // Überprüfen, ob die Bewegung nach unten innerhalb des Spielfelds bleibt
-        {
-            spieler.Y += hoeheJeBereich;
-        }
+        spieler.Y += hoeheJeBereich;
     }
 
-    // Spieler darf nicht nach links aus dem Spielfeld laufen
+Ich kann dem Objekt eine Taste zuweisen die dafür zuständig ist das sie nach links läuft 
+
     if (e.KeyCode == Keys.Left)
-    {
-        if (spieler.X - breite / anzahlBereiche >= 0) // Überprüfen, ob die Bewegung nach links innerhalb des Spielfelds bleibt
-        {
-            spieler.X -= breite / anzahlBereiche;
-        }
+    { 
+         spieler.X -= breite / anzahlBereiche;
     }
 
-    // Spieler darf nicht nach rechts aus dem Spielfeld laufen
+  Ich kann dem Objekt eine Taste zuweisen die dafür zuständig ist das sie nach rechts läuft 
+
     if (e.KeyCode == Keys.Right)
     {
-        if (spieler.X + spieler.Width + breite / anzahlBereiche <= breite) // Überprüfen, ob die Bewegung nach rechts innerhalb des Spielfelds bleibt
-        {
             spieler.X += breite / anzahlBereiche;
-        }
     }
 
     this.Refresh(); // Aktualisierung des Bildschirms nach der Spielerbewegung

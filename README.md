@@ -21,6 +21,18 @@ Ergänzen Sie hier die notwendigen Code-Ausschnitte, um zu zeigen, wie man es ma
 
 ### Bewegung animieren
 
+- Um eine Bewegung zu Animiren muss ich ersteinmal festlegen wie Groß der Bewegungsraum(Fenstergröße) ist
+  `Clientsize = 600, 400 ;`
+- Als zweiter Schritt muss ich in einer Klasse die Position und die Bewegungs geschwindigkeit festlegen
+  `Public int X;`
+  `Public int Y;`
+  `Public int Width;`
+  `Public int Hight;`
+  `Public int Speed;`
+- Dann brauche ich in der Klasse eine Methode
+  
+  
+
 ### Objekte mit Tasten steuern
 
 `Rectangle spieler;`
